@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -92,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,90 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-libraries"
+    },
+    "mat-select-search": {
+      "projectType": "library",
+      "root": "projects/mat-select-search",
+      "sourceRoot": "projects/mat-select-search/src",
+      "prefix": "cdm",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/mat-select-search/tsconfig.lib.json",
+            "project": "projects/mat-select-search/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mat-select-search/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mat-select-search/src/test.ts",
+            "tsConfig": "projects/mat-select-search/tsconfig.spec.json",
+            "karmaConfig": "projects/mat-select-search/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mat-select-search/tsconfig.lib.json",
+              "projects/mat-select-search/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "mat-select-multi-columns": {
+      "projectType": "library",
+      "root": "projects/mat-select-multi-columns",
+      "sourceRoot": "projects/mat-select-multi-columns/src",
+      "prefix": "cdm",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/mat-select-multi-columns/tsconfig.lib.json",
+            "project": "projects/mat-select-multi-columns/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mat-select-multi-columns/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mat-select-multi-columns/src/test.ts",
+            "tsConfig": "projects/mat-select-multi-columns/tsconfig.spec.json",
+            "karmaConfig": "projects/mat-select-multi-columns/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mat-select-multi-columns/tsconfig.lib.json",
+              "projects/mat-select-multi-columns/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "my-libraries",
+  "cli": {
+    "analytics": "b2880bef-ceba-46d0-8e4c-7f874c62927d"
+  }
 }
