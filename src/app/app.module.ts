@@ -1,3 +1,4 @@
+import { MatSelectMultiColumnsModule } from 'projects/mat-select-multi-columns/src/public-api';
 import { MatSelectSearchModule } from './../../projects/mat-select-search/src/lib/mat-select-search.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -21,7 +22,8 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatSelectSearchModule
+    MatSelectSearchModule,
+    MatSelectMultiColumnsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,13 @@
+{
+  "name": "mat-select-multi-columns",
+  "version": "0.0.1",
+  "description": "mat select multi columns",
+  "keywords": ["mat-select", "multi-columns", "multicolumns", "mat-select-multi-columns"],
+  "peerDependencies": {
+    "@angular/common": "^10.1.6",
+    "@angular/core": "^10.1.6"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
